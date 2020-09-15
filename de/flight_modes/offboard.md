@@ -56,10 +56,10 @@ Offboard mode requires an active connection to a remote MAVLink system (e.g. com
       
       * Specify the *type* of the setpoint in `type_mask` (if these bits are not set the vehicle will fly in a flower-like pattern):
         
-        > **Note** The *setpoint type* values below are not part of the MAVLink standard for the `type_mask` field.
+        > **Note** Some of the *setpoint type* values below are not part of the MAVLink standard for the `type_mask` field.
         
         The values are:
-        
+        * 292: Gliding setpoint (Equivalent to setting `type_mask` as `POSITION_TARGET_TYPEMASK_Z_IGNORE`, `POSITION_TARGET_TYPEMASK_VZ_IGNORE`, `POSITION_TARGET_TYPEMASK_AZ_IGNORE`. Configures TECS to prioritize airspeed in order to make the vehicle glide)
         * 4096: Takeoff setpoint.
         * 8192: Land setpoint.
         * 12288: Loiter setpoint (fly a circle centred on setpoint).
