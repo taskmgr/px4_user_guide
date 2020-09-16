@@ -60,7 +60,7 @@ Offboard mode requires an active connection to a remote MAVLink system (e.g. com
         
         The values are:
         * 292: Gliding setpoint.
-          This onfigures TECS to prioritize airspeed in order to make the vehicle glide.
+          This configures TECS to prioritize airspeed in order to make the vehicle glide.
           It is equivalent to setting `type_mask` as `POSITION_TARGET_TYPEMASK_Z_IGNORE`, `POSITION_TARGET_TYPEMASK_VZ_IGNORE`, `POSITION_TARGET_TYPEMASK_AZ_IGNORE`. 
         * 4096: Takeoff setpoint.
         * 8192: Land setpoint.
