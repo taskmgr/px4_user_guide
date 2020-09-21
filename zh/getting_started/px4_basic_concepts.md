@@ -49,17 +49,17 @@ PX4 使用传感器来确定飞行器状态（稳定和启用自动控制所需�
 - [传感器](../getting_started/sensor_selection.md) 
 - [外设](../peripherals/README.md)
 
-## Outputs: Motors, Servos, Actuators {#outputs}
+## 输出：电机、舵机、执行部件{#输出}
 
-PX4 uses *outputs* to control: motor speed (e.g. via [ESC](#esc_and_motors)), flight surfaces like ailerons and flaps, camera triggers, parachutes, grippers, and many other types of payloads.
+PX4使用*输出*来控制:电机转速（如：通过电调[ESC](#esc_and_motors)），飞机表面,如副翼、襟翼、相机快门开关、降落伞、投掷控制器和许多其他类型的有效载荷。
 
-For example, the images below show the PWM output ports for [Pixhawk 4](/flight_controller/pixhawk4.md) and [Pixhawk 4 mini](../flight_controller/pixhawk4_mini.md).
+例如，下图展示了[Pixhawk 4](/flight_controller/pixhawk4.md) 和 [Pixhawk 4 mini](../flight_controller/pixhawk4_mini.md)的PWM输出端口。
 
 ![Pixhawk 4 output ports](../../assets/flight_controller/pixhawk4/pixhawk4_main_aux_ports.jpg) ![Pixhawk4 mini MAIN ports](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_pwm.png)
 
-The outputs are divided into `MAIN` and `AUX` outputs, and individually numbered (i.e. `MAINn` and `AUXn`, where `n` is 1 to usually 6 or 8).
+输出被分为`主要`和`备份`两种，并且均被独立的编号(如： `MAINn` 和 `AUXn`,  `n`通常是1至6~8).
 
-> **Tip** The specific purpose for each output is hard coded on a per-airframe basis. The output mapping for all airframes is given in the [Airframe Reference](../airframes/airframe_reference.md).
+>**提示** 每个输出的具体用途都是硬编码在每个机身的。 [Airframe Reference](../airframes/airframe_reference.md)中给出了所有机身的输出映射。
 
 <span></span>
 
